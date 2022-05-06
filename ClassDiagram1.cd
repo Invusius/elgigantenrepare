@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Elgigantenrepare.App" BaseTypeListCollapsed="true">
+    <Position X="2.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAQAAIAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Elgigantenrepare.HomePage" BaseTypeListCollapsed="true">
+    <Position X="7.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAEAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>HomePage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Elgigantenrepare.MainPage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAABAAAAAAAAAAEAAAAAAAAAQAAAAAAgAAA=</HashCode>
+      <FileName>MainPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Elgigantenrepare.OpretSagPage" BaseTypeListCollapsed="true">
+    <Position X="13" Y="1" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAQAAhAIAAAAEYCAEAAAAAQAAAQCAAAAAggAA=</HashCode>
+      <FileName>OpretSagPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Elgigantenrepare.SagListPage" BaseTypeListCollapsed="true">
+    <Position X="6" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAEAAAAAAAAAAAAAAAEgIAA=</HashCode>
+      <FileName>SagListPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Elgigantenrepare.SagsPage" BaseTypeListCollapsed="true">
+    <Position X="0.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAgAQAAhAYAABAEZCAUAgIAAAAAAASAAAAAgAAA=</HashCode>
+      <FileName>SagsPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.137" Collapsed="true" />
+  </Class>
+  <Class Name="Elgigantenrepare.Models.FabrikantModel">
+    <Position X="4.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Models\FabrikantModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Elgigantenrepare.Models.kundeModel">
+    <Position X="11.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAABAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Models\kundeModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Elgigantenrepare.Models.LeveringsTypeModel">
+    <Position X="15.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Models\LeveringsTypeModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Elgigantenrepare.Models.medarbejdereModel" Collapsed="true">
+    <Position X="7.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Models\medarbejdereModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Elgigantenrepare.Models.medarbejderloginModel">
+    <Position X="7.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Models\medarbejderloginModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Elgigantenrepare.Models.opretSagModel">
+    <Position X="11.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAACAAAAAAAAAAAAAAAAAAAQAAAEEAABAAAAAEBAAAA=</HashCode>
+      <FileName>Models\opretSagModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Elgigantenrepare.Models.ProduktModel" Collapsed="true">
+    <Position X="6.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAIAgA=</HashCode>
+      <FileName>Models\ProduktModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Elgigantenrepare.Models.ProduktModelModel" Collapsed="true">
+    <Position X="8" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIDAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Models\ProduktModelModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Elgigantenrepare.Models.SagModel">
+    <Position X="9.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAgAAgAAAAAAIAAAAAQQAAAAIAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Models\SagModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Elgigantenrepare.Models.SagTypeModel">
+    <Position X="2.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAgAAAgA=</HashCode>
+      <FileName>Models\SagTypeModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Elgigantenrepare.Models.StatusModel">
+    <Position X="4.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Models\StatusModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Elgigantenrepare.Models.TestModel">
+    <Position X="6" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Models\TestModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Elgigantenrepare.Models.TypeModel">
+    <Position X="9.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Models\TypeModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Elgigantenrepare.Services.ApiClient">
+    <Position X="2.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAEAAAAEAIAAIAAICAAQAIACAAAAAAAAIAAARAEAAAg=</HashCode>
+      <FileName>Services\ApiClient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

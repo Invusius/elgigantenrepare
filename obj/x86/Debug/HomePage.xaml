@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="Elgigantenrepare.HomePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Elgigantenrepare"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Button x:ConnectionId='2' Content="Button" Margin="409,416,0,0" VerticalAlignment="Top"                       />
+        <Button x:ConnectionId='3' Content="Opret sager" Margin="839,426,0,0" VerticalAlignment="Top"                     />
+
+    </Grid>
+</Page>
+

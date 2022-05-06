@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="Elgigantenrepare.SagListPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Elgigantenrepare"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <ListView Height="800" Width="300" ItemsSource="{x:Bind sagBinding }" Margin="600,100,600,100" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <StackPanel Orientation="Vertical" >
+                            
+                            <TextBlock Text="{Binding kunde.fornavn }"></TextBlock>
+                            <TextBlock Text="{Binding produkt.navn }"></TextBlock>
+                            <TextBlock Text="{Binding beskrivelse}"></TextBlock>
+                        </StackPanel>
+                        <StackPanel>
+                            <Button Content="Vis sag" Tag="{Binding id}" Click="sagClick" ></Button>
+                        </StackPanel>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button Content="Back" Margin="87,74,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+    </Grid>
+</Page>
