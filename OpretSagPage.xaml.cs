@@ -27,9 +27,10 @@ namespace Elgigantenrepare
     public sealed partial class OpretSagPage : Page
     {
 
+        
         public ApiClient Api = new ApiClient();
 
-
+        // lister som kan bindes til front end 
         ObservableCollection<medarbejdereModel> medarbejderBinding = new ObservableCollection<medarbejdereModel>(); 
         ObservableCollection<kundeModel> kundeBinding = new ObservableCollection<kundeModel>(); 
         ObservableCollection<ProduktModel> produktBinding = new ObservableCollection<ProduktModel>(); 
@@ -51,26 +52,22 @@ namespace Elgigantenrepare
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
             
+           // fyld text fra beskrivelses boksen ind i beskrivelse variablen 
+           string beskrivelse = this.beskrivelse.Text;
 
-           string beskrivelse = this.beskrivelse.Text; 
-            
-           int chip_id = Convert.ToInt32( this.chip_id.Text) ;
-            /*
-           int medarbejder_id = Convert.ToInt32(this.medarbejder_id.Text);
-           int kunde_id = Convert.ToInt32(this.kunde_id.Text);
-           int produkt_id = Convert.ToInt32(this.produkt_id.Text);
-           int status_id = Convert.ToInt32(this.status_id.Text);
-           int sagstype_id = Convert.ToInt32(this.sagstype_id.Text);
-           int afhentningstype = Convert.ToInt32(this.afhentningstype.Text); 
-            */
-
+            // fyld text fra chip_id boksen ind i chip_id variablen og konvater den til int 
+            int chip_id = Convert.ToInt32( this.chip_id.Text) ;
+         
+            // fyld verdiger ind i en instans af opretsagmodel 
             opretSagModel sag = new opretSagModel(beskrivelse,chip_id, Convert.ToInt32(Medarbejder_drop.SelectedValue) , Convert.ToInt32(Kunder_drop.SelectedValue) , Convert.ToInt32(Produkt_drop.SelectedValue),Convert.ToInt32(Status_drop.SelectedValue),Convert.ToInt32(Type_drop.SelectedValue), Convert.ToInt32(Leverings_drop.SelectedValue));
 
+            // send http request og check om den var en OK
             bool? success = await Api.postSag(sag);
             if (success == true)
-            {
+            {   
+                // lav text til popup 
                 var popup = new MessageDialog("sag blev oprettet");
-
+                // vis popup
                 await popup.ShowAsync();
             }
             else
@@ -97,17 +94,12 @@ namespace Elgigantenrepare
         private void test_drop_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             
-            /*
-            var popup = new MessageDialog("medarbejder id: " + test_drop.SelectedValue);
-
-            await popup.ShowAsync();
-            */
             
         }
 
         private async void fillComboBox()
         {
-            
+            // fyld værdiger fra databasen ind i comboboxsene 
             List<medarbejdereModel> medarbejdere = await Api.getMedarbejdere(); 
             foreach (var i in medarbejdere)
             {
@@ -146,6 +138,7 @@ namespace Elgigantenrepare
 
         }
 
+        // naviger til ny side når der bliver klikket på knappen 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(HomePage), null);

@@ -19,6 +19,7 @@
         <TextBlock HorizontalAlignment="Left" Margin="662,625,0,0" Text="Status" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="662,685,0,0" Text="Sag type" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="662,745,0,0" Text="Leverings type" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <!-- for at binde en verdig til en ComboBox laves der en binding i ItemSource hvor medarbejderBinding er navnet på en ObservableCollection i codebehind og DisplayMemberPath en den værdig som bliver vist i boksen og SelectedValuePath er dens hidden value   -->
         <ComboBox x:Name="Medarbejder_drop" Margin="662,466,0,0" Width="211" SelectionChanged="test_drop_SelectionChanged" ItemsSource="{x:Bind medarbejderBinding }" DisplayMemberPath="fornavn" SelectedValuePath="id" />
         <Button Content="Button" Margin="737,844,0,0" VerticalAlignment="Top" Click="Button_Click"/>
         <ComboBox x:Name="Kunder_drop" Margin="662,526,0,0" Width="211" SelectionChanged="test_drop_SelectionChanged" ItemsSource="{x:Bind kundeBinding }" DisplayMemberPath="fornavn" SelectedValuePath="id" />

@@ -14,48 +14,32 @@ namespace Elgigantenrepare.Services
     public class ApiClient 
     {
 
+        // lav en instans af httpclient
         static readonly HttpClient client = new HttpClient();
 
         string token = "7ac008adc2dbd432a146c48c09cbfcd96b0ec38f7dd131025fb31541f633105ec2195be4214273481add4ebbfb4410b0d335b83c9f741e49bb9f4899a92239a2";
 
-        public async Task<TestModel> gettest()
-        {
-
-            var request = new HttpRequestMessage(HttpMethod.Get, "https://api.thecatapi.com/v1/images/search");
-
-            request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token );
-
-            HttpResponseMessage response = await client.SendAsync(request, HttpCompletionOption.ResponseHeadersRead); 
-
-            response.EnsureSuccessStatusCode();
-
-            var jsonString = await response.Content.ReadAsStringAsync();
-
-            var jlist = JsonConvert.DeserializeObject<List<TestModel>>(jsonString);
-
-            //var test = JsonConvert.DeserializeObject<testmodel>(jsonString);
-
-            return jlist[0];
-
-
-        }
 
         public async Task<List<kundeModel>> getKunder()
         {
 
-
+            // met request metoden og stig
 
             var request = new HttpRequestMessage(HttpMethod.Get, "https://elrepair.semeicardia.online/api/kunder");
 
+            // set bearer token header 
             request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
+            // send request og gem response 
             HttpResponseMessage response = await client.SendAsync(request, HttpCompletionOption.ResponseHeadersRead);
-            //HttpResponseMessage response = await client.GetAsync("http://elrepair.semeicardia.online/api/kunder");
 
+            // se om der var en fejlkode 
             response.EnsureSuccessStatusCode();
 
+            // læs response 
             var jsonString = await response.Content.ReadAsStringAsync();
             
+            // formater response til en liste af objecter af sypen kundemodel 
             var obj = JsonConvert.DeserializeObject<List<kundeModel>>(jsonString);
 
             return obj;
@@ -70,7 +54,6 @@ namespace Elgigantenrepare.Services
 
             HttpResponseMessage response = await client.SendAsync(request, HttpCompletionOption.ResponseHeadersRead);
 
-            //HttpResponseMessage response = await client.GetAsync("http://elrepair.semeicardia.online/api/medarbejdere");
 
             response.EnsureSuccessStatusCode();
 

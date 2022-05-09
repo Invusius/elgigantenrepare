@@ -14,7 +14,6 @@ namespace Elgigantenrepare.Models
         public int id { get; set; }
         [JsonProperty("beskrivelse")]
         public string beskrivelse { get; set; }
-
         [JsonProperty("kunde")]
         public kundeModel kunde { get; set; }
         [JsonProperty("medarbejder")]
